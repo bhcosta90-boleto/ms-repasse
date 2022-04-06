@@ -3207,12 +3207,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/bhcosta90-boleto/package.git",
-                "reference": "db11cd20081dba0338a697e06841aab45091e639"
+                "reference": "37eb48c468a5f4194f64780a90a75527260702de"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bhcosta90-boleto/package/zipball/db11cd20081dba0338a697e06841aab45091e639",
-                "reference": "db11cd20081dba0338a697e06841aab45091e639",
+                "url": "https://api.github.com/repos/bhcosta90-boleto/package/zipball/37eb48c468a5f4194f64780a90a75527260702de",
+                "reference": "37eb48c468a5f4194f64780a90a75527260702de",
                 "shasum": ""
             },
             "require": {
@@ -3243,7 +3243,7 @@
                 "source": "https://github.com/bhcosta90-boleto/package/tree/master",
                 "issues": "https://github.com/bhcosta90-boleto/package/issues"
             },
-            "time": "2022-04-05T22:16:17+00:00"
+            "time": "2022-04-06T19:13:35+00:00"
         },
         {
             "name": "psr/container",

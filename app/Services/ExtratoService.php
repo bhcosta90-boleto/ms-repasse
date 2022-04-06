@@ -3,14 +3,13 @@
 namespace App\Services;
 
 use App\Models\Repasse;
-use Illuminate\Support\Facades\Log;
 use PJBank\Package\Services\ValidateTrait;
 
 final class ExtratoService
 {
     use ValidateTrait;
 
-    public function __construct(private Repasse $repasse)
+    public function __construct()
     {
     }
 
@@ -26,7 +25,7 @@ final class ExtratoService
         ]);
 
         if ($newData['movimentacao'] == 'credito') {
-            return $this->repasse->create([
+            return $this->getRepasseService()->cadastrarNovoRepasse([
                 'credencial' => $newData['credencial'],
                 'extrato_id' => $newData['uuid'],
                 'cobranca_id' => $newData['cobranca_id'],
@@ -34,5 +33,10 @@ final class ExtratoService
                 'data_credito' => $newData['data_creditocliente'],
             ]);
         }
+    }
+
+    private function getRepasseService(): RepasseService
+    {
+        return app(RepasseService::class);
     }
 }
