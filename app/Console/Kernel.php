@@ -14,7 +14,8 @@ class Kernel extends ConsoleKernel
      */
     protected $commands = [
         Commands\SincronizacaoContaCommand::class,
-        Commands\SincronizacaoExtratoCommand::class
+        Commands\SincronizacaoExtratoCommand::class,
+        Commands\SincronizacaoContaSplitCommand::class,
     ];
 
     /**

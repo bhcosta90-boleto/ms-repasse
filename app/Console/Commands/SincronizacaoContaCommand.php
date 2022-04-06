@@ -44,7 +44,6 @@ class SincronizacaoContaCommand extends Command
     {
         $consumeSupport->consume('contas', [
             'credencial' => 'required',
-            'status' => 'required',
             'banco_codigo' => 'required',
             'banco_agencia' => 'required',
             'banco_conta' => 'required',

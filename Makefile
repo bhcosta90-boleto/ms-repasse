@@ -10,6 +10,9 @@ bash: ## Limpar todas as bases de dados
 up: ## Subindo todos os containers
 	docker-compose up -d --force-recreate
 
+supervisor: ## Re-criando container do supervisor
+	docker-compose up -d --force-recreate repasses_supervisor
+
 migrate: ## Migrando todas as tabelas
 	docker-compose exec repasses php artisan migrate
 

@@ -17,10 +17,13 @@ return new class extends Migration
         Schema::create('contas', function (Blueprint $table) {
             $table->id();
             $table->string('credencial')->index();
+            $table->string('nome');
+            $table->string('cpfcnpj', 20);
             $table->string('banco_codigo', 5);
             $table->string('banco_agencia', 20);
             $table->string('banco_conta', 20);
             $table->string('status')->nullable();
+            $table->boolean('validado')->default(false);
         });
     }
 
