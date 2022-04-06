@@ -17,10 +17,11 @@ return new class extends Migration
             $table->id();
             $table->uuid('uuid')->unique();
             $table->string('credencial', 40);
-            $table->uuid('extrato_id');
-            $table->uuid('cobranca_id');
+            $table->uuid('extrato_id')->nullable();
+            $table->uuid('cobranca_id')->nullable();
             $table->unsignedDouble('valor_repasse');
             $table->date('data_credito');
+            $table->boolean('aprovado')->default(false);
             $table->timestamps();
         });
     }

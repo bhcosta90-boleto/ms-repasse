@@ -16,5 +16,6 @@ class Repasse extends Model
         'valor_repasse',
         'valor_extrato',
         'data_credito',
+        'aprovado',
     ];
 }
